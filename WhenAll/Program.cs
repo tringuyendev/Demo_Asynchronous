@@ -20,15 +20,13 @@ namespace Demo_Asynchronous
             Console.WriteLine($"Main Thread Completed");
 
             stopwatch.Stop();
-            Console.WriteLine($"Main Thread Execution Time {stopwatch.ElapsedMilliseconds / 1000.0} Seconds");
+            //Console.WriteLine($"Main Thread Execution Time {stopwatch.ElapsedMilliseconds / 1000.0} Seconds");
             Console.ReadKey();
         }
         public static async void ProcessCreditCards(List<CreditCard> creditCards)
         {
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-
-            //Case use WhenAll
             //var tasks = new List<Task<string>>();
             //foreach (var creditCard in creditCards)
             //{
@@ -36,6 +34,8 @@ namespace Demo_Asynchronous
             //    tasks.Add(response);
             //}
             //await Task.WhenAll(tasks);
+            //Case use WhenAll
+
 
             //Case normal
             foreach (var creditCard in creditCards)
@@ -51,7 +51,7 @@ namespace Demo_Asynchronous
         {
             //Here we can do any API Call to Process the Credit Card
             //But for simplicity we are just delaying the execution for 1 second
-            Console.WriteLine($"Start Credit Card Number: {creditCard.CardNumber} Processing");
+            //Console.WriteLine($"Start Credit Card Number: {creditCard.CardNumber} Processing");
 
             await Task.Delay(1000);
             string message = $"Credit Card Number: {creditCard.CardNumber} Name: {creditCard.Name} Processed";

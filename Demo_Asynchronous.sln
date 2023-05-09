@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Asynchronous", "Demo_Asynchronous\Demo_Asynchronous.csproj", "{765BC99F-702D-47C3-AC9C-F3DBB57EBF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_Asynchronous", "Demo_Asynchronous\Demo_Asynchronous.csproj", "{765BC99F-702D-47C3-AC9C-F3DBB57EBF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateSynchronuosMethodUsingTask", "CreateSynchronuosMethodUsingTask\CreateSynchronuosMethodUsingTask.csproj", "{61940D42-7371-44F2-BD3E-61AEDC7DA0A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateSynchronuosMethodUsingTask", "CreateSynchronuosMethodUsingTask\CreateSynchronuosMethodUsingTask.csproj", "{61940D42-7371-44F2-BD3E-61AEDC7DA0A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI", "DemoAPI\DemoAPI.csproj", "{27FEB5ED-9C43-4E44-8B82-33C778CF0ABF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI", "DemoAPI\DemoAPI.csproj", "{27FEB5ED-9C43-4E44-8B82-33C778CF0ABF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenAll", "WhenAll\WhenAll.csproj", "{F3BC615E-FD3A-409F-A754-5629F716D57D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhenAll", "WhenAll\WhenAll.csproj", "{F3BC615E-FD3A-409F-A754-5629F716D57D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRun", "TaskRun\TaskRun.csproj", "{02BBDBB8-ED98-4D6F-8A90-24B457F4D633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskRun", "TaskRun\TaskRun.csproj", "{02BBDBB8-ED98-4D6F-8A90-24B457F4D633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationTask", "CancellationTask\CancellationTask.csproj", "{738FAA24-52E4-4C83-A411-2301B6F63E75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancellationTask", "CancellationTask\CancellationTask.csproj", "{738FAA24-52E4-4C83-A411-2301B6F63E75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlock", "Deadlock\Deadlock.csproj", "{2D1D71E8-7C29-49A3-8EDE-F2B910F3302C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.GetAwaiter", "Task.GetAwaiter\Task.GetAwaiter.csproj", "{C463A610-AC54-4056-ADD9-3E5C3D4D360E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{2D1D71E8-7C29-49A3-8EDE-F2B910F3302C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D1D71E8-7C29-49A3-8EDE-F2B910F3302C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D1D71E8-7C29-49A3-8EDE-F2B910F3302C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C463A610-AC54-4056-ADD9-3E5C3D4D360E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C463A610-AC54-4056-ADD9-3E5C3D4D360E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C463A610-AC54-4056-ADD9-3E5C3D4D360E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C463A610-AC54-4056-ADD9-3E5C3D4D360E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

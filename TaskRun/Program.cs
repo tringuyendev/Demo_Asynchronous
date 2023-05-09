@@ -30,20 +30,20 @@ namespace Demo_Asynchronous
             stopwatch.Start();
             var tasks = new List<Task<string>>();
 
-            //foreach (var creditCard in creditCards)
-            //{
-            //    var response = ProcessCard(creditCard);
-            //    tasks.Add(response);
-            //}
-
-            await Task.Run(() =>
+            foreach (var creditCard in creditCards)
             {
-                foreach (var creditCard in creditCards)
-                {
-                    var response = ProcessCard(creditCard);
-                    tasks.Add(response);
-                }
-            });
+                var response = ProcessCard(creditCard);
+                tasks.Add(response);
+            }
+
+            //await Task.Run(() =>
+            //{
+            //    foreach (var creditCard in creditCards)
+            //    {
+            //        var response = ProcessCard(creditCard);
+            //        tasks.Add(response);
+            //    }
+            //});
 
             //It will execute all the tasks concurrently
             await Task.WhenAll(tasks);

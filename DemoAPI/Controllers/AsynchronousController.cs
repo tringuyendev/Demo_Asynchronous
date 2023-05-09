@@ -72,5 +72,16 @@ namespace DemoAPI.Controllers
             await Task.Delay(TimeSpan.FromSeconds(1));
             throw new Exception("This is an error message...");
         }
+
+        [Route("AggregateException")]
+        [HttpGet]
+        public async Task AggregateExceptionAsync()
+        {
+            // 1
+            //ThrowError().Wait();
+
+            // 2
+            ThrowError().GetAwaiter().GetResult();
+        }
     }
 }
